@@ -1,0 +1,21 @@
+!! Insert this into your skype config for dunst popups
+<Notifications>
+  <Enable>
+    <Scripts>
+      <ChatIncoming>1</ChatIncoming>
+      <ChatIncomingInitial>1</ChatIncomingInitial>
+      <ContactOffline>1</ContactOffline>
+      <ContactOnline>1</ContactOnline>
+      <SkypeLogin>0</SkypeLogin>
+      <SkypeLogout>0</SkypeLogout>
+    </Scripts>
+  </Enable>
+  <Scripts>
+    <ChatIncoming>notify-send -t 4000 &#34;Message From %sname&#34; &#34;%smessage&#34;</ChatIncoming>
+    <ChatIncomingInitial>notify-send -t 2000 &#34;Message From %sname&#34; &#34;%smessage&#34;</ChatIncomingInitial>
+    <ContactOffline>notify-send -t 1000 &#34;Contact Signed Out&#34; &#34;%sname is now offline.&#34;</ContactOffline>
+    <ContactOnline>notify-send -t 1000 &#34;Contact Signed In&#34; &#34;%sname is now online.&#34;</ContactOnline>
+    <SkypeLogin></SkypeLogin>
+    <SkypeLogout></SkypeLogout>
+  </Scripts>
+</Notifications>

@@ -1,0 +1,24 @@
+" ==Vimperator_Color_Scheme==
+" name: reed
+" ==reed_Color_scheme==
+
+hi CmdLine color: #ffffff; background: #222222; padding: 2px;
+hi CompDesc width: 500px; max-width: 500px; color: #cccccc;
+hi CompItem[selected] background: #666666;
+hi CompTitle background: #222222;
+hi CompTitle>* color: #ffffff; border-top: 1px solid #c0b18b; border-bottom: 1px solid #ffffff;
+hi ContentSeparator border-top: 1px dotted #ffffff;
+hi ErrorMsg color: #ff3333;
+hi Filter border-r  adius: 1px; background: #ffffff; color: #666666;
+hi InfoMsg color:#cccccc;
+hi ModeMsg color:#666666; padding: 0px 5px;
+hi MoreMsg color:#666666;
+hi NonText color: #666666
+hi Normal color: #ffffff; background: #222222;
+hi PromptText color: #ffffff; background: #222222;
+hi Question color: #ff6600; font-weight: bold;
+hi StatusLine color: #ffffff; background: #222222;
+hi Title color: #cccccc; background: #222222; 
+hi Hint font-family: monospace; font-size: 10px; font-weight: bold; text-transform: uppercase; color: #ffffff; background-color: #666666; border-color: ButtonShadow; border-width: 0px; border-style: solid; padding: 0px 1px 0px 1px; 
+hi HintActive background-color: #666666; color: #cee318;
+hi HintElem background-color: #666666; color: #ffffff;

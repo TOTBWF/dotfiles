@@ -1,0 +1,15 @@
+#! /bin/bash
+
+CAPACITY="$(cat /sys/class/power_supply/BAT0/capacity)"
+STATUS="$(cat /sys/class/power_supply/BAT0/status)"
+
+echo  " $CAPACITY%"
+echo  " $CAPACITY%"
+
+if [ "$STATUS" != "Discharging" ]; then
+  echo "#ffffff"
+elif [ "$CAPACITY" -lt "40" ]; then
+  echo "#ff3333"
+else
+  echo "#cccccc"
+fi

@@ -1,0 +1,27 @@
+visualizer_fifo_path = "/tmp/mpd_fifo"
+visualizer_output_name = "my_fifo"
+visualizer_sync_interval = "10" 
+visualizer_in_stereo = "yes"
+#visualizer_type = "wave" (spectrum/wave)
+visualizer_type = "spectrum" (spectrum/wave)
+
+use_console_editor = yes
+
+# Track Style
+
+song_columns_list_format = "(20)[white]{a} (2)[blue]{n} (53)[white]{t} (9)[white]{lr}" 
+
+# Colors
+colors_enabled = yes
+
+progressbar_elapsed_color = blue
+
+main_window_color = white
+main_window_highlight_color = blue
+
+active_column_color = cyan
+
+color1 = white
+color2 = blue
+
+

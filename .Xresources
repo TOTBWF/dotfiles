@@ -1,0 +1,48 @@
+#include "/home/reed/.colors/reed-mono"
+
+! #########################################
+urxvt*perl-lib:			/usr/lib/urxvt/perl
+urxvt*perl-ext-common:		default,matcher,clipboard
+urxvt*perl-matcher: 		1
+urxvt*matcher-button: 		3
+urxvt*url-launcher:		/usr/bin/firefox
+urxvt*cursorUnderline: 1
+urxvt*letterspace: -5
+URxvt*iso14755: False  
+URxvt*iso14755_52: False
+urxvt*cursorBlink:	true	
+urxvt*scrollBar:		false
+urxvt*depth:			32 
+urxvt*internalBorder: 		5
+urxvt*dynamicColors: on
+urxvt.urgentOnBell:  true
+
+! Font change settings
+URxvt.clipboard.copycmd: xclip -i -selection clipboard
+URxvt.clipboard.pastecmd: xclip -o -selection clipboard
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt.keysym.Shift-Control-C: perl:clipboard:copy
+
+!URxvt*font:                                     xft:terminus:hinting=true:pixelsize=12:antialias=false,xft:Stlarch
+!URxvt*boldFont:                                 xft:terminus:style=bold:hinting=true:pixelsize=12:antialias=false
+!URxvt*italicFont:                               xft:terminus:style=italic:hinting=true:pixelsize=12:antialias=false
+!URxvt*boldItalicFont:                           xft:terminus:style=bolditalic:hinting=true:pixelsize=12:antialias=false
+
+urxvt*font: -*-terminus-medium-r-normal--12-*-*-*-*-*-*-*,-*-stlarch-medium-r-normal--12-*-*-*-*-*-*-*
+urxvt*boldFont: -*-terminus-medium-r-normal--12-*-*-*-*-*-*-* 
+urxvt*italicFont: -*-terminus-medium-r-normal--12-*-*-*-*-*-*-* 
+urxvt*bolditalicFont: -*-terminus-medium-r-normal--12-*-*-*-*-*-*-* 
+
+Xft.antialias: 1
+Xft.autohint: 0
+Xft.dpi: 96
+Xft.hinting: 1
+Xft.hintstyle: hintfull
+Xft.lcdfilter: lcddefault
+Xft.rgba: rgb
+
+xclock*majorColor: #9a875f
+xclock*minorColor: #9a875f
+xclock*minuteColor: #9a875f
+xclock*hourColor: #9a875f
+xclock*secondColor: #9a875f

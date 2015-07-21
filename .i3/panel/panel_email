@@ -1,0 +1,5 @@
+#! /bin/bash
+source $(dirname $0)/config
+
+NUM_EMAIL=$(cat /home/reed/.config/bspwm/panel/unread_count)
+echo -n "$NUM_EMAIL $DIV" 

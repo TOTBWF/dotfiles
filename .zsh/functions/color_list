@@ -1,0 +1,1 @@
+print -P  -- `awk -F: '$1 !~ /^!/ && NF && $1 ~ /[[:digit:]]/ {gsub(/ /, "", $2); gsub(/[^[:digit:]]/, "", $1); print "%F{" $1 "}Color " $1 "%f Hex Code:" $2 "\n\n"} ' $1`

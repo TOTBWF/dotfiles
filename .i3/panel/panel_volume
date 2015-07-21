@@ -1,0 +1,11 @@
+#!/bin/bash
+source $(dirname $0)/config
+
+VOLUME=$(pamixer --get-volume)
+MUTE=$(pamixer --get-mute)
+
+if [ "$MUTE" = "true" ]; then 
+  echo -n $(F $VOLUME%% $RED) $DIV
+else
+  echo -n $VOLUME%% $DIV
+fi
