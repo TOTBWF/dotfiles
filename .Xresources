@@ -1,4 +1,4 @@
-#include "/home/reed/.colors/reed-mono"
+#include "/home/reed/.colors/reed-basic"
 
 ! #########################################
 urxvt*perl-lib:			/usr/lib/urxvt/perl
@@ -12,7 +12,7 @@ URxvt*iso14755: False
 URxvt*iso14755_52: False
 urxvt*cursorBlink:	true	
 urxvt*scrollBar:		false
-urxvt*depth:			32 
+urxvt*depth:			0 
 urxvt*internalBorder: 		5
 urxvt*dynamicColors: on
 urxvt.urgentOnBell:  true
@@ -28,7 +28,7 @@ URxvt.keysym.Shift-Control-C: perl:clipboard:copy
 !URxvt*italicFont:                               xft:terminus:style=italic:hinting=true:pixelsize=12:antialias=false
 !URxvt*boldItalicFont:                           xft:terminus:style=bolditalic:hinting=true:pixelsize=12:antialias=false
 
-urxvt*font: -*-terminus-medium-r-normal--12-*-*-*-*-*-*-*,-*-stlarch-medium-r-normal--12-*-*-*-*-*-*-*
+urxvt*font: -*-terminus-medium-r-normal--12-*-*-*-*-*-*-*
 urxvt*boldFont: -*-terminus-medium-r-normal--12-*-*-*-*-*-*-* 
 urxvt*italicFont: -*-terminus-medium-r-normal--12-*-*-*-*-*-*-* 
 urxvt*bolditalicFont: -*-terminus-medium-r-normal--12-*-*-*-*-*-*-* 

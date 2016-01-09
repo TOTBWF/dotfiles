@@ -1,3 +1,7 @@
+# MPD Stuff
+mpd_host = 192.168.0.50 
+mpd_port = 6600
+
 visualizer_fifo_path = "/tmp/mpd_fifo"
 visualizer_output_name = "my_fifo"
 visualizer_sync_interval = "10" 
@@ -23,5 +27,4 @@ active_column_color = cyan
 
 color1 = white
 color2 = blue
-
 

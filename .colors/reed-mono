@@ -1,52 +1,52 @@
 ! Special Colors
-URxvt.background: #222222
-URxvt.foreground: #eeeeee
+URxvt.background: #101010
+URxvt.foreground: #f7f7f7
 
 !black
-urxvt*color0:     #222222
+urxvt*color0:     #101010
 
 !dark gray
-urxvt*color8:     #666666
+urxvt*color8:     #7c7c7c
 
 !red
-urxvt*color1:     #ff3333
+urxvt*color1:     #252525
 
 !bright red
-urxvt*color9:     #ff6600
+urxvt*color9:     #999999
 
 !green
-urxvt*color2:     #cee318
+urxvt*color2:     #464646
 
 !bright green
-urxvt*color10:    #a5b613
+urxvt*color10:    #a0a0a0
 
 !yellow
-urxvt*color3:     #ffff7d
+urxvt*color3:     #525252
 
 !bright yellow
-urxvt*color11:    #eee685
+urxvt*color11:    #8e8e8e
 
 !blue
-urxvt*color4:     #66c2ff
+urxvt*color4:     #ababab
 
 !bright blue
-urxvt*color12:    #529bcc
+urxvt*color12:    #868686
 
 !magenta
-urxvt*color5:     #9f79ee
+urxvt*color5:     #b9b9b9
 
 !bright magenta
-urxvt*color13:    #7f61be
+urxvt*color13:    #686868
 
 !cyan
-urxvt*color6:     #70ffff
+urxvt*color6:     #e3e3e3
 
 !bright cyan
-urxvt*color14:    #5acccc
+urxvt*color14:    #747474
 
 !gray
-urxvt*color7:     #ffffff
+urxvt*color7:     #f7f7f7
 
 !white
-urxvt*color15:    #cccccc
+urxvt*color15:    #5e5e5e
 

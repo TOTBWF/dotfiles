@@ -1,5 +1,0 @@
-#!/bin/bash
-source $(dirname $0)/config
-
-echo -n "$(date +%d/%m/%y) " && echo -n $DIV
-

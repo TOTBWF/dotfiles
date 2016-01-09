@@ -1,37 +1,17 @@
-# Path to oh-my-zsh
-export ZSH=/home/reed/.oh-my-zsh/
-
-# Zsh Theme name
-ZSH_THEME="reed"
-
-# Enable oh-my-zsh
-source $ZSH/oh-my-zsh.sh
+# Enable antigen
+source /usr/share/zsh/scripts/antigen/antigen.zsh
+antigen use oh-my-zsh
+antigen bundle git
+antigen bundle vi-mode
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen theme ~/.zsh/themes/ reed
+antigen apply
 
 # Add user defined functions to the path
 fpath=($HOME/.zsh/functions $fpath )
 
 # Set ZSH to vim mode
 bindkey -v
-
-# Print ZLE status to RPROMPT
-# The Actual Printing is handled in the zsh theme
-export VIM_MODE="[INSERT]"
-
-precmd() {
-  VIM_MODE="[INSERT]"
-}
-zle-keymap-select() {
-  VIM_MODE="[INSERT]"
-  [[ $KEYMAP = vicmd ]] && VIM_MODE="[NORMAL]"
-  () { return $__prompt_status }
-  zle reset-prompt
-}
-
-zle-line-init() {
-  typeset -g __prompt_status="$?"
-}
-zle -N zle-keymap-select
-zle -N zle-line-init
 
 # Set escape delay to 10ms
 export KEYTIMEOUT=1
@@ -49,8 +29,8 @@ export VISUAL=/bin/vim
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-# Plugins to be loaded
-plugins=(git)
+# Path var
+export PATH=$PATH:$HOME/.cabal/bin
 
 # Aliases
 alias l="ls -lh"
@@ -58,6 +38,11 @@ alias ll="ls -lah"
 alias mount_efi="sudo mount /dev/sda1 /mnt; cd /mnt"
 alias pacman="sudo pacman --color always"
 alias tarx="tar -xvf"
+alias chrome="google-chrome-stable --force-device-scale-factor=1"
+alias steam="STEAM_RUNTIME=1 steam"
+alias mopidy-reload="systemctl --user restart mopidy.service"
+alias num-updates="yaourt -Sya && yaourt -Qqau"
+
 # Steam Stuff
 export STEAM_HOME=/home/reed/.steam/steam/steamapps/common/
 export KSP_MODS=/home/reed/.steam/steam/steamapps/common/Kerbal\ Space\ Program/KSP_MODS/
@@ -69,6 +54,3 @@ export __GL_THREADED_OPTIMIZATIONS=0
 export __GL_SYNC_TO_VBLANK=1
 export __GL_YIELD="NOTHING"
 export CSMT=enabled
-
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
