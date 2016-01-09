@@ -1,0 +1,11 @@
+hidden partial modifier_keys
+xkb_symbols "swapenter" {
+   key <RTRN>  {	[ backslash,         bar	]	};
+   key <BKSL>  { [ Return                  ] };
+};
+  
+hidden partial modifier_keys
+xkb_symbols "swapescape" {
+    key <CAPS> { [ Escape ] };
+    key <ESC>  { [ Caps_Lock ] };
+};

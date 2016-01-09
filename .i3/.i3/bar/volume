@@ -1,0 +1,14 @@
+#! /bin/bash
+VOLUME=$(pamixer --get-volume)
+MUTE=$(pamixer --get-mute)
+
+
+if [ "$MUTE" = "true" ]; then
+  echo  $VOLUME%
+  echo  $VOLUME%
+  echo "#ff3333"
+else
+  echo   $VOLUME%
+  echo   $VOLUME%
+  echo "#cccccc"
+fi

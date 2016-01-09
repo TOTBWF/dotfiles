@@ -1,0 +1,6 @@
+xset +fp /usr/share/fonts/local &
+xset fp rehash &
+offlineimap_notify.sh &
+dunst &
+compton -c &
+sh ~/.fehbg &
