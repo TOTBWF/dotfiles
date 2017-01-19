@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/reed/.config/nvim'
+let g:netrw_dirhist_2='/home/reed/.config/nvim/config'
+let g:netrw_dirhist_3='/home/reed/projects/EverWingHax/.git'
+let g:netrw_dirhist_4='/home/reed/.zsh/themes'
